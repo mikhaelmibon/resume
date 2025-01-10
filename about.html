@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     color: #333;
-    background-image: url('image/Comporate\ image.png'); /* Replace with your background image */
+    background-image: url('image/Comporate\ image.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -25,14 +25,14 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Reduced overlay opacity */
-    z-index: -1; /* Keep it behind content */
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
 }
 
 /* Navigation bar */
 .navbar {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); 
     color: white;
     padding: 10px 20px;
     position: fixed;
@@ -66,21 +66,21 @@ body::before {
 }
 
 .navbar ul li a:hover {
-    color: lightblue; /* Change color on hover */
+    color: lightblue;
 }
 
 .navbar .logo {
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: -10px; /* Move logo 10px to the left */
+    margin-left: -10px; 
 }
 
 /* Main container */
 .container {
     max-width: 900px;
-    margin: 140px auto 40px; /* Adjusted margin to avoid navbar overlap and add space */
-    background: rgba(255, 255, 255, 0.85); /* Reduced opacity for more background visibility */
+    margin: 140px auto 40px; 
+    background: rgba(255, 255, 255, 0.85); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -92,12 +92,12 @@ body::before {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 40px; /* Added space between sections */
+    margin-bottom: 40px;
 }
 
 .section img {
-    width: 200px; /* Symmetric width */
-    height: 200px; /* Symmetric height */
+    width: 200px; 
+    height: 200px; 
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -115,12 +115,12 @@ body::before {
     font-size: 1rem;
 }
 
-/* Alternate layout for sections */
+
 .section:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
-/* Responsive design */
+
 @media (max-width: 600px) {
     .section {
         flex-direction: column;
@@ -138,7 +138,7 @@ body::before {
     </style>
    </head>
 <body>
-    <!-- Navigation bar -->
+   
     <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -147,10 +147,10 @@ body::before {
             <li><a href="skills.html">Skills</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <img src="image/MYLOGO.webp" alt="Logo" class="logo"> <!-- Replace with your logo -->
+        <img src="image/MYLOGO.webp" alt="Logo" class="logo"> 
     </div>
 
-    <!-- Resume Content -->
+   
     <div class="container" id="home">
         <div class="section">
             <img src="image/Passport.jpg" alt="Profile Picture">
