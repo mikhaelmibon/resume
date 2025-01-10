@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/home.style.css">
+  <title>E-Resume</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('image/Comporate\ image.png'); /* Replace with your background image path or URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.navbar ul li {
+  font-size: 16px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: lightblue; /* Change color on hover */
+}
+
+.navbar .logo {
+  margin-right: 20px;
+  height: 40px;
+}
+
+/* Main content */
+.content {
+  margin-top: 120px; /* To avoid overlapping with the navbar */
+  text-align: center;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text content */
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.passport {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 20px;
+  object-fit: cover; /* Ensures the image is cropped correctly if not square */
+}
+
+.details {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+  </style>
+ </head>
+<body>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <img src="image/MYLOGO.webp" alt="Logo" class="logo"> <!-- Replace with your logo -->
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+    <h1>E-RESUME</h1>
+    <img src="image/Passport.jpg" alt="Passport Photo" class="passport"> <!-- Replace with your passport photo -->
+    <div class="details">
+      <p><strong>Name:</strong> Mikhael Mibon</p>
+      <p><strong>Student ID:</strong> 2024788689</p>
+      <p><strong>Tagline:</strong> Never Give Up Never Back Down</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image/Comporate\ image.png'); /* Add your background image path here */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+    
+        /* Add a dark overlay on the background for better contrast */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: -1; /* Place behind content */
+        }
+    
+        /* Navigation bar */
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .navbar ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0 20px;
+            gap: 20px;
+        }
+    
+        .navbar ul li {
+            font-size: 16px;
+        }
+    
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+    
+        .navbar ul li a:hover {
+            color: lightblue; /* Change color on hover */
+        }
+    
+        .navbar .logo {
+            margin-right: 20px;
+            height: 40px;
+        }
+    
+        /* Main content */
+        h1 {
+            text-align: center;
+            margin-top: 120px; /* Space for the fixed navbar */
+            color: white; /* Change to white for better visibility */
+            width: 100%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+        }
+    
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding: 20px;
+            flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
+        }
+    
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            width: 250px;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+    
+        section img {
+            width: 180px; /* Increase image size */
+            height: 180px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+    
+        section p {
+            font-size: 18px;
+            text-align: center;
+            color: #555;
+            margin: 0;
+        }
+    
+        section:hover {
+            transform: scale(1.05); /* Add a slight zoom effect on section hover */
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+        }
+    
+        section:hover img {
+            transform: scale(1.1); /* Enlarge image on hover */
+        }
+    
+        section:nth-child(even) {
+            background-color: rgba(249, 249, 249, 0.8);
+        }
+    
+        /* Make the sections clickable */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="image/MYLOGO.webp" alt="Logo" class="logo"> <!-- Replace with your logo -->
+    </div>
+
+    <h1>Contact</h1>
+    
+    <div class="container">
+        <a href="#">
+            <section>
+                <img src="image/Instagram_logo_2022.svg.png" alt="Soft Skills">
+                <p><strong>Instagram:</strong></p>
+            </section>
+        </a>
+
+        <a href="#">
+            <section>
+                <img src="image/whatsapp.png" alt="Hard Skills">
+                <p><strong>Whatsapp:</strong></p>
+            </section>
+        </a>
+
+        <a href="#">
+            <section>
+                <img src="image/facebook.png" alt="Language Proficiency">
+                <p><strong>Facebook:</strong></p>
+            </section>
+        </a>
+    </div>
+</body>
+</html>
